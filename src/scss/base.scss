@@ -1,0 +1,63 @@
+/* ****************************************************************************************************
+
+  # base
+
+**************************************************************************************************** */
+
+* {
+  outline: none;
+}
+
+html {
+  font-size: calc(1000vw / 375);
+}
+@media print, screen and (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media print, screen and (min-width: 1920px) {
+  html {
+    font-size: calc(1000vw / 1920);
+  }
+}
+
+/* tailwind cssの提供があるが 個人的なrest.css追記*/
+body {
+  margin: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-break: break-all;
+}
+
+body {
+  @apply text-base text-gray-900;
+  font-feature-settings: 'palt';
+
+  /* メトリクスカーニングを指定する */
+  font-kerning: normal;
+
+  /* アンチエイリアスを指定する */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  line-break: strict;
+}
+
+/* safariでも100vh */
+/* Avoid Chrome to see Safari hack */
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* The hack for Safari */
+    height: -webkit-fill-available;
+  }
+}
+
+details > summary {
+  cursor: pointer;
+  list-style: none !important;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}

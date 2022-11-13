@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" class="loading">
+  <head>
+    {{> layout/meta}}
+  </head>
+  <body>
+    {{> layout/header}}
+    <main class="bg-gray-300 py-16 px-8">
+      <section class="py-16">{{> tools/kv}}</section>
+      <section class="py-16">{{> tools/card}}</section>
+      <section class="py-16">{{> tools/modal}}</section>
+      <section class="py-16">{{> tools/catch-copy}}</section>
+    </main>
+    {{> layout/footer}}
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

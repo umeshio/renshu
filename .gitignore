@@ -1,0 +1,13 @@
+dist/
+.husky
+.DS_Store
+node_modules
+.editorconfig
+.env
+.eslintignore
+.eslintrc
+.node-version
+.prettierignore
+.prettierrc.yml
+yarn-error.log
+yarn-lock
