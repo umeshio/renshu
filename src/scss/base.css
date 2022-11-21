@@ -1,28 +1,27 @@
+@charset "UTF-8";
 /* ****************************************************************************************************
 
   # base
 
 **************************************************************************************************** */
-
 * {
   outline: none;
 }
 
 html {
-  font-size: calc(1000vw / 375);
+  font-size: 2.6666666667vw;
 }
+
 @media print, screen and (min-width: 768px) {
   html {
     font-size: 62.5%;
   }
 }
-
 @media print, screen and (min-width: 1920px) {
   html {
-    font-size: calc(1000vw / 1920);
+    font-size: 0.5208333333vw;
   }
 }
-
 /* tailwind cssの提供があるが 個人的なrest.css追記*/
 body {
   margin: 0;
@@ -33,11 +32,9 @@ body {
 
 body {
   @apply text-base text-gray-900;
-  font-feature-settings: 'palt';
-
+  font-feature-settings: "palt";
   /* メトリクスカーニングを指定する */
   font-kerning: normal;
-
   /* アンチエイリアスを指定する */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
@@ -52,7 +49,6 @@ body {
     height: -webkit-fill-available;
   }
 }
-
 details > summary {
   cursor: pointer;
   list-style: none !important;
@@ -69,8 +65,9 @@ details > summary::-webkit-details-marker {
 }
 
 @media (min-width: 800px) {
-  .l-container{
+  .l-container {
     width: 800px;
     margin: 0 auto;
   }
 }
+/*# sourceMappingURL=base.css.map */

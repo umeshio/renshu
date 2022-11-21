@@ -13,3 +13,13 @@ module.exports = {
   },
   plugins: [require('flowbite/plugin')]
 };
+
+module.exports = {
+  content: ["./index.html"],
+  theme: {
+    screens: {
+      pc: "800px",
+    },
+  },
+  plugins: [],
+};

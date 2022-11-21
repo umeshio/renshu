@@ -31,8 +31,8 @@ for (let i = 0; i < htmlFileList.length; i++) {
 const pageData = {
   '/index.html': {
     isHome: true,
-    title: 'title',
-    description: 'description',
+    title: '模写サイト|Flower Shop',
+    description: 'コーディング用の練習用の模写サイトです',
     keywords: 'keywords',
     type: 'website',
     ogImg: '',
